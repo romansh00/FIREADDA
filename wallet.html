@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wallet - FIRE ADDA</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <img src="images/fire-adda-logo.png" alt="FIRE ADDA Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="tournaments.html">🎮 Tournaments</a></li>
+                <li><a href="wallet.html">💰 Wallet</a></li>
+                <li><a href="#" onclick="logout()">🚪 Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="wallet">
+        <div class="wallet-container">
+            <h2>💰 Your Wallet</h2>
+            <p>Balance: <span id="wallet-balance">₹0</span></p>
+
+            <!-- Add Money Section -->
+            <button class="btn" onclick="redirectToDeposit()">➕ Add Money</button>
+
+            <!-- Withdraw Money Section -->
+            <h3>Withdraw Money</h3>
+            <form id="withdraw-form">
+                <label>Bank Name:</label>
+                <input type="text" id="bank-name" placeholder="Enter Bank Name" required>
+
+                <label>Bank Account Number:</label>
+                <input type="number" id="bank-account" placeholder="Enter Account Number" required>
+
+                <label>Amount:</label>
+                <input type="number" id="withdraw-amount" placeholder="Enter Amount" required>
+
+                <button type="submit" class="btn">Withdraw</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

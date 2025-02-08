@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIRE ADDA - Deposit</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <img src="images/fire-adda-logo.png" alt="FIRE ADDA Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tournaments.html">Tournaments</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="wallet.html">Wallet</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="deposit">
+        <div class="deposit-container">
+            <h2>💳 Deposit Money</h2>
+            <p>⚠️ <strong>Important:</strong> Write your username <span id="usernameDisplay"></span> in "Remarks" when making the payment.</p>
+            <img src="images/payment-method.png" alt="Payment QR Code" class="payment-img">
+            <p>After payment, your amount will be credited within 10 minutes.</p>
+            <a href="wallet.html"><button class="btn">Back to Wallet</button></a>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 FIRE ADDA. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Retrieve username from local storage and display it
+        document.getElementById("usernameDisplay").innerText = localStorage.getItem("depositUsername") || "your username";
+    </script>
+
+</body>
+</html>

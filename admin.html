@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel - FIRE ADDA</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>🔥 Admin Panel - FIRE ADDA</h1>
+        <nav>
+            <ul>
+                <li><button class="btn" onclick="logoutAdmin()">Logout</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>⚙️ Admin Actions</h2>
+        <button class="btn" onclick="showCreateUserForm()">Create User</button>
+        <button class="btn" onclick="showAddMoneyForm()">Add Money</button>
+        <button class="btn" onclick="loadTournaments()">Manage Matches</button>
+
+        <div id="create-user-form" class="form-container">
+            <h3>👤 Create New User</h3>
+            <label>Username:</label>
+            <input type="text" id="new-username" required>
+            <label>Email:</label>
+            <input type="email" id="new-email" required>
+            <label>Password:</label>
+            <input type="password" id="new-password" required>
+            <button class="btn" onclick="createUser()">Create User</button>
+        </div>
+
+        <div id="add-money-form" class="form-container">
+            <h3>💰 Add Money</h3>
+            <label>Username:</label>
+            <input type="text" id="money-username" required>
+            <label>Amount:</label>
+            <input type="number" id="money-amount" required>
+            <button class="btn" onclick="addMoney()">Add Money</button>
+        </div>
+
+        <h2>🏆 Manage Tournaments</h2>
+        <table id="admin-tournaments-table">
+            <thead>
+                <tr>
+                    <th>Match Type</th>
+                    <th>Entry Fee</th>
+                    <th>Created By</th>
+                    <th>Status</th>
+                    <th>Winner</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </main>
+
+    <script src="admin.js"></script>
+
+</body>
+</html>
+
+
+<h2>🏆 Manage Tournaments</h2>
+<table id="admin-tournaments-table">
+    <thead>
+        <tr>
+            <th>Match Type</th>
+            <th>Entry Fee</th>
+            <th>Created By</th>
+            <th>Players</th>
+            <th>Status</th>
+            <th>Winner</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody></tbody>
+</table>
+
+
+<h2>🏆 Manage Tournaments</h2>
+<table id="admin-tournaments-table">
+    <thead>
+        <tr>
+            <th>Match Type</th>
+            <th>Entry Fee</th>
+            <th>Created By</th>
+            <th>Players</th>
+            <th>Status</th>
+            <th>Winner</th>
+            <th>Winning Proof</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody></tbody>
+</table>
